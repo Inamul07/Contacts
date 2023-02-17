@@ -1,7 +1,8 @@
 from motor import motor_asyncio
+import urllib3
 
 client = motor_asyncio.AsyncIOMotorClient(
-    "mongodb://rootuser:rootpass@localhost:27017")
+    "mongodb+srv://adminajax:adminajax@contacts-app.hr1hes3.mongodb.net/?retryWrites=true&w=majority")
 
 db = client.contacts_app
 collection = db.contacts
